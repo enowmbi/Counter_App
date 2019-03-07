@@ -1,12 +1,12 @@
-import React,{Component} from 'react';
+import React from 'react';
 import './Header.css';
 
-const Header =() =>{
+const Header=(props)=>{
  
  return(
      <React.Fragment>
          <nav className="header">
-             // put total counters here! 
+             <div> Total Items in cart <span className="badge badge-pill badge-success">{props.totalCounters} </span></div>
          </nav>
      </React.Fragment>
  )

@@ -23,12 +23,10 @@ class App extends Component {
     }
 
     handleDecrement =(counter) =>{
-        if(counter.value !== 0){
-        const counters = [...this.state.counters]
+        const counters = [... this.state.counters]
         const index = counters.indexOf(counter)
         counters[index].value = counters[index].value -1
-            this.setState({counters: counters})
-        }
+        this.setState({counters: counters})
     }
 
     handleDelete=(id)=>{
